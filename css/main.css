@@ -1,0 +1,333 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+  width: 1400px;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  background-color: #000000;
+}
+/*HEADER*/
+
+.introduction {
+  content: "";
+  position: relative;
+  padding-left: 125px;
+  height: 765px;
+  background-image: url(../images/intro.png);
+}
+header {
+  display: flex;
+}
+
+.logo {
+  margin-right: 550px;
+  margin-top: 36px;
+  width: 100px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  letter-spacing: -0.11em;
+  text-decoration: none;
+  text-align: center;
+  color: #1bff07;
+  background: #000000;
+  border-radius: 100px;
+}
+
+.menu {
+  margin-top: 33px;
+  display: flex;
+}
+
+.menu-text {
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  transition: 0.1s linear;
+}
+
+.menu-text:hover {
+  color: #1bff07;
+}
+
+.about-me {
+  position: absolute;
+  top: 334px;
+  width: 430px;
+  height: 103px;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.intro {
+  position: absolute;
+  top: 466px;
+  width: 919px;
+  font-size: 80px;
+  line-height: 70px;
+  letter-spacing: -0.03em;
+  color: #1bff07;
+}
+
+/*MAIN*/
+
+.my-projects {
+  margin: auto;
+  padding-top: 150px;
+  width: 1155px;
+}
+
+.my-projects h1,
+.competencies h1 {
+  margin-bottom: 40px;
+  font-size: 55px;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.my-projects-example {
+  position: relative;
+  height: 550px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(../images/metrika.png);
+  border-radius: 30px;
+}
+
+.my-projects-example:nth-child(3) {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(../images/nothing.png);
+}
+
+.my-projects-example:nth-child(4) {
+  margin-bottom: 80px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(../images/MNTN.png);
+}
+
+.my-projects-example-name {
+  position: absolute;
+  left: 50px;
+  top: 410px;
+  text-decoration: none;
+  font-size: 35px;
+  line-height: 46px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.my-projects-example-name:hover {
+  color: #1bff07;
+}
+
+.my-projects-example-description {
+  position: absolute;
+  left: 50px;
+  top: 461px;
+  font-size: 30px;
+  line-height: 39px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.show-projects {
+  margin-bottom: 150px;
+  display: block;
+  font-size: 30px;
+  line-height: 153px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+  text-decoration: none;
+  width: 582px;
+  height: 153px;
+  background: #1bff07;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.show-projects:hover {
+  box-sizing: border-box;
+  color: #1bff07;
+  background: #000000;
+  border: 1px solid #1bff07;
+}
+
+.competencies {
+  margin: auto;
+  width: 1155px;
+}
+
+.stack-icon {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: #1bff07;
+  border-radius: 10px;
+}
+
+.stack-title {
+  margin-bottom: 15px;
+  font-size: 35px;
+  line-height: 46px;
+  letter-spacing: -0.03em;
+  color: #1bff07;
+}
+
+.stack-about {
+  margin-bottom: 60px;
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.services {
+  margin: auto;
+  padding-top: 90px;
+  width: 1155px;
+}
+
+.services h1 {
+  margin-bottom: 74px;
+  font-size: 35px;
+  line-height: 46px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.text-wrapper {
+  margin-bottom: 137px;
+  width: 1150px;
+  height: 283px;
+  background: #191c19;
+  border-radius: 30px;
+}
+
+.text-wrapper h3 {
+  padding-top: 40px;
+  padding-left: 40px;
+  font-size: 55px;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  color: #1bff07;
+}
+
+.text-wrapper p {
+  padding-top: 15px;
+  padding-left: 40px;
+  width: 749px;
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+/*FOOTER*/
+
+.contacts {
+  margin-bottom: 50px;
+  position: relative;
+  padding-top: 13px;
+  height: 717px;
+  background: #191c19;
+  border-radius: 30px;
+  background-image: url(../images/cuate.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+.contacts p {
+  position: absolute;
+  left: 125px;
+  top: 320px;
+  font-size: 35px;
+  line-height: 60px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.contacts ul {
+  position: absolute;
+  left: 125px;
+  top: 408px;
+}
+
+.contacts li {
+  margin-bottom: 20px;
+}
+
+.contacts a {
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contacts a:hover {
+  color: #1bff07;
+}
+
+footer {
+  margin: auto;
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+    margin-top: 70px;
+  position: relative;
+  padding-left: 125px;
+  height: 223px;
+  background: #ffffff;
+  border-radius: 30px 30px 0 0;
+}
+
+.copyright h4 {
+  position: absolute;
+  top: 76px;
+  font-family: "Manrope";
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+.copyright p {
+  position: absolute;
+  top: 172px;
+  font-family: "Manrope";
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  opacity: 0.5;
+}
