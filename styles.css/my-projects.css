@@ -1,0 +1,93 @@
+.my-projects_inner {
+    margin-top: 150px;
+}
+  
+  .my-projects h1,
+  .competencies h1 {
+    margin-bottom: 40px;
+    font-size: 55px;
+    line-height: 72px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+  }
+  
+  .my-projects-example {
+    position: relative;
+    height: 550px;
+    width: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      ),
+      url(../images/metrika.png);
+    border-radius: 30px;
+  }
+  
+  .my-projects-example:nth-child(3) {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      ),
+      url(../images/nothing.png);
+  }
+  
+  .my-projects-example:nth-child(4) {
+    margin-bottom: 80px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      ),
+      url(../images/MNTN.png);
+  }
+  
+  .my-projects-example-name {
+    position: absolute;
+    left: 50px;
+    top: 410px;
+    text-decoration: none;
+    font-size: 35px;
+    line-height: 46px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    transition: 0.3s;
+  }
+  
+  .my-projects-example-name:hover {
+    color: #1bff07;
+  }
+  
+  .my-projects-example-description {
+    position: absolute;
+    left: 50px;
+    top: 461px;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+  }
+  
+  .show-projects {
+    margin-bottom: 150px;
+    display: block;
+    font-size: 30px;
+    line-height: 153px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #000000;
+    text-decoration: none;
+    width: 582px;
+    height: 153px;
+    background: #1bff07;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .show-projects:hover {
+    box-sizing: border-box;
+    color: #1bff07;
+    background: #000000;
+    border: 1px solid #1bff07;
+  }

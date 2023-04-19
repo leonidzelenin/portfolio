@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="icon" href="favicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,89 +15,127 @@
 <body>
 
     <section class="introduction">
-        <header>
-            <a class="logo" href="#">LZ</a>
-            <ul class="menu">
-                <li><a class="menu-text" href="#show">портфолио</a></li>
-                <li><a class="menu-text" href="#competencies">компетенции</a></li>
-                <li><a class="menu-text" href="#services">услуги</a></li>
-                <li><a class="menu-text" href="#contacts">контакты</a></li>
-            </ul>
-        </header>
-        <p class="about-me">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов</p>
-        <p class="intro">Привет, я Леонид — фронтенд разработчик и дизайнер сайтов</p>
+        <div class="container">
+            <div class="introduction_inner">
+                <div class="introduction_text">
+                    <div class="menu-nav">
+                        <a href="#"><img class="logo" src="./images/logo.png" alt="LZ"></a>
+                        <ul class="nav">
+                            <li><a class="nav__link" href="#show">портфолио</a></li>
+                            <li><a class="nav__link" href="#competencies">компетенции</a></li>
+                            <li><a class="nav__link" href="#services">услуги</a></li>
+                            <li><a class="nav__link" href="#contacts">контакты</a></li>
+                        </ul>
+                        <div class="js-burger-btn burger-btn burger-btn_open"></div>
+                        <div class="js-burger burger burger_open">
+                            <div class="burger__content">
+                                <a href="/"><img class="burger_logo" src="./images/logo.png" alt="LZ" /></a>
+                                <ul class="burger_nav">
+                                    <li><a class="burger_nav__link" href="#show">портфолио</a></li>
+                                    <li><a class="burger_nav__link" href="#competencies">компетенции</a></li>
+                                    <li><a class="burger_nav__link" href="#services">услуги</a></li>
+                                    <li><a class="burger_nav__link" href="#contacts">контакты</a></li>
+                                </ul>
+                                <div class="js-burger__content burger__contacts ">
+                                    <p class="burger__contacts-title">для связи:</p>
+                                    <ul class="burger__contacts-wrapper">
+                                        <li><a class="burger__contacts-phone" href="tel:+79358954535">+7 935  895-45-35</a></li>
+                                        <li><a class="burger__contacts-tg" target="_blank" href="https://t.me/LeonidZelenin">@LeonidZelenin</a></li>
+                                        <li><a class="burger__contacts-mail" target="_blank" href="mailto:lzelenin89@gmail.com">e-mail</a></li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <p class="about-me">Разрабатываю имиджевые сайты <br> для малого и среднего бизнеса, которые <br>повышают престиж компании и позволяют<br>выделиться на фоне конкурентов</p>
+                    <p class="intro">Привет, я Леонид — фронтенд разработчик и дизайнер сайтов</p>
+                </div>
+            </div>
+        </div>
     </section>
-
+<!--
     <section id="show" class="my-projects">
-        <h1>Самые свежие проекты</h1>
-        <div class="my-projects-example">
-            <h2> <a class="my-projects-example-name" href="https://leonidzelenin.github.io/Metrika/">Metrika &#5125</a></h2>
-            <p class="my-projects-example-description">дизайн, верстка, настройка</p>
+        <div class="container_thin">
+            <div class="my-projects_inner">
+                <h1>Самые свежие проекты</h1>
+                <div class="my-projects-example">
+                    <h2> <a class="my-projects-example-name" href="https://leonidzelenin.github.io/metrika_adaptive/">Metrika &#5125</a></h2>
+                    <p class="my-projects-example-description">дизайн, верстка, настройка</p>
+                </div>
+                <div class="my-projects-example">
+                    <h2> <a class="my-projects-example-name" href="https://leonidzelenin.github.io/Nothing-Ear/">Nothing Ear &#5125</a></h2>
+                    <p class="my-projects-example-description">разработка интерфейса</p>
+                </div>
+                <div class="my-projects-example">
+                    <h2> <a class="my-projects-example-name" href="https://leonidzelenin.github.io/MNTN/">MNTN &#5125</a></h2>
+                    <p class="my-projects-example-description">дизайн, верстка, настройка</p>
+                </div>
+                <a class="show-projects" href="#show">Смотреть все проекты</a>
+            </div>
         </div>
-        <div class="my-projects-example">
-            <h2> <a class="my-projects-example-name" href="https://leonidzelenin.github.io/Nothing-Ear/">Nothing Ear &#5125</a></h2>
-            <p class="my-projects-example-description">разработка интерфейса</p>
-        </div>
-        <div class="my-projects-example">
-            <h2> <a class="my-projects-example-name" href="https://leonidzelenin.github.io/MNTN/">MNTN &#5125</a></h2>
-            <p class="my-projects-example-description">дизайн, верстка, настройка</p>
-        </div>
-        <a class="show-projects" href="#show">Смотреть все проекты</a>
     </section>
 
     <section id="competencies" class="competencies">
-        <h1>Мои компетенции</h1>
-        <div class="stack">
-            <div class="stack-icon">
-                <img src="./icons/html.svg" alt="">
+        <div class="container_thin">
+            <div class="competencies_inner">
+                <h1>Мои компетенции</h1>
+                <div class="stack">
+                    <div class="stack-icon">
+                        <img src="./icons/html.svg" alt="">
+                    </div>
+                    <h2 class="stack-title">HTML и CSS</h2>
+                    <p class="stack-about">это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
+                </div>
+                <div class="stack">
+                    <div class="stack-icon">
+                        <img src="./icons/js.svg" alt="">
+                    </div>
+                    <h2 class="stack-title">JavaScript</h2>
+                    <p class="stack-about">это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.</p>
+                </div> 
+                <div class="stack">
+                    <div class="stack-icon">
+                        <img src="./icons/framework.svg" alt="">
+                    </div>
+                    <h2 class="stack-title">Работа с библиотеками и фреймворками</h2>
+                    <p class="stack-about">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+                </div> 
+                <div class="stack">
+                    <div class="stack-icon">
+                        <img src="./icons/adaptive.svg" alt="">
+                    </div>
+                    <h2 class="stack-title">Разработка для мобильных устройств и адаптивная верстка</h2>
+                    <p class="stack-about">мобильное приложение — это удобный способ работы с корпоративной системой вдали от десктопа. Однако адаптивная вёрстка основного веб-приложения зачастую даёт такой же UX-эффект, а её разработка, поддержка и внедрение оказываются проще и дешевле. Совокупность преимуществ и недостатков этих двух решений стирает между ними границы.</p>
+                </div>    
             </div>
-            <h2 class="stack-title">HTML и CSS</h2>
-            <p class="stack-about">это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
         </div>
-        <div class="stack">
-            <div class="stack-icon">
-                <img src="./icons/js.svg" alt="">
-            </div>
-            <h2 class="stack-title">JavaScript</h2>
-            <p class="stack-about">это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.</p>
-        </div> 
-        <div class="stack">
-            <div class="stack-icon">
-                <img src="./icons/framework.svg" alt="">
-            </div>
-            <h2 class="stack-title">Работа с библиотеками и фреймворками</h2>
-            <p class="stack-about">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
-        </div> 
-        <div class="stack">
-            <div class="stack-icon">
-                <img src="./icons/adaptive.svg" alt="">
-            </div>
-            <h2 class="stack-title">Разработка для мобильных устройств и адаптивная верстка</h2>
-            <p class="stack-about">мобильное приложение — это удобный способ работы с корпоративной системой вдали от десктопа. Однако адаптивная вёрстка основного веб-приложения зачастую даёт такой же UX-эффект, а её разработка, поддержка и внедрение оказываются проще и дешевле. Совокупность преимуществ и недостатков этих двух решений стирает между ними границы.</p>
-        </div>    
     </section>
 
     <section id="services" class="services">
-        <h1>Помогаю реализовать<br>широкий спектр задач</h1>
-        <div class="services-example">
-            <img src="./images/Rectangle 15.png">
-            <div class="text-wrapper">
-                <h3>Разработка сайта под ключ</h3>
-                <p>Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач<br>Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие</p>
-            </div>
-        </div>
-        <div class="services-example">
-            <img src="./images/Rectangle 18.png">
-            <div class="text-wrapper">
-                <h3>Верстка сайтов</h3>
-                <p>Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта</p>
-            </div>
-        </div>
-        <div class="services-example">
-            <img src="./images/Rectangle 20.png">
-            <div class="text-wrapper">
-                <h3>Разработка мобильного интерфейса</h3>
-                <p>Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения</p>
+        <div class="container_thin">
+            <div class="services_inner">
+                <h1>Помогаю реализовать<br>широкий спектр задач</h1>
+                <div class="services-example">
+                    <img src="./images/Rectangle 15.png">
+                    <div class="text-wrapper">
+                        <h3>Разработка сайта под ключ</h3>
+                        <p>Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач<br>Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие</p>
+                    </div>
+                </div>
+                <div class="services-example">
+                    <img src="./images/Rectangle 18.png">
+                    <div class="text-wrapper">
+                        <h3>Верстка сайтов</h3>
+                        <p>Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта</p>
+                    </div>
+                </div>
+                <div class="services-example">
+                    <img src="./images/Rectangle 20.png">
+                    <div class="text-wrapper">
+                        <h3>Разработка мобильного интерфейса</h3>
+                        <p>Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -103,13 +143,13 @@
     <section id="contacts" class="contacts">
         <p>для связи:</p>
         <ul>
-            <li><a href="https://t.me/LeonidZelenin">telegram</a></li>
-            <li><a href="mailto:lzelenin89@gmail.com">mail</a></li>
+            <li><a target="_blank" href="https://t.me/LeonidZelenin">telegram</a></li>
+            <li><a target="_blank" href="mailto:lzelenin89@gmail.com">mail</a></li>
             <li><a href="tel:+79126610517">call</a></li>
         </ul>
     </section>
 
-    <footer>
+    <footer class="footer">
             <ul class="menu">
                 <li><a class="menu-text" href="#show">портфолио</a></li>
                 <li><a class="menu-text" href="#competencies">компетенции</a></li>
@@ -122,6 +162,9 @@
         <h4>Портфолио фронтенд-разработчика Леонида Зеленина</h4>
         <p>Все права защищены. 2023</p>
     </section>
+-->
+
+<script src="./js/burger.js"></script> 
 
 </body>
 </html>

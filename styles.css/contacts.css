@@ -1,0 +1,44 @@
+.contacts {
+    margin-bottom: 50px;
+    position: relative;
+    padding-top: 13px;
+    height: 717px;
+    background: #191c19;
+    border-radius: 30px;
+    background-image: url(../images/cuate.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+  }
+  .contacts p {
+    position: absolute;
+    left: 125px;
+    top: 320px;
+    font-size: 35px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+  }
+  
+  .contacts ul {
+    position: absolute;
+    left: 125px;
+    top: 408px;
+  }
+  
+  .contacts li {
+    margin-bottom: 20px;
+  }
+  
+  .contacts a {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .contacts a:hover {
+    color: #1bff07;
+  }
